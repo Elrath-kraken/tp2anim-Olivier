@@ -1,0 +1,178 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    background-color: #2f2f2f;
+    padding : 20px 0px 20px 0px;
+    max-height:70px;
+    display: inline-block;
+    width: 100%;
+}
+
+main {
+    background-color: #2f2f2f;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    position: relative;
+}
+
+.logo {
+    max-height: 50px;
+    opacity : 0.3;
+    transition: opacity, 2s;
+}
+
+.logo:hover {
+opacity :  1;
+max-height: 70px;
+}
+
+.right {
+ float : right;
+ margin-right: 50px;
+
+ 
+}
+
+select{
+    padding: 20px;
+    margin: 8px;
+    background-color:#b52f18;
+    color: white;
+    border: none;
+    border-radius: 10px
+}
+
+.submit {
+    padding: 20px;
+    margin: 10px;
+    background-color: #7d0b0b;
+    color: white;
+    border: none;
+    border-radius: 10px
+}
+
+.informations{
+    background-image: url(img/abyss.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.finfo{
+    height : 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fstats{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fcomments{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#like {
+    width: 150px;
+    background-color: #2f2f2f;
+    border:green solid 5px;
+    border-radius: 10px;
+    color: green;
+   font-size: 20pt;
+    padding: 10px;
+    margin: 20px 20px 20px 300px;
+   
+}
+
+
+@keyframes aboleth {
+    0% {top: 0px; left: 0px;}
+    8.3% {top: 0px; right: 0px;}
+    16.6% {bottom: 0px; right: 0px;}
+    25% {bottom: 0px; left: 0px;}
+    33.3% {top: 0px; left: 0px;}
+    41.6% {top: 0px; right: 0px;}
+    50% {bottom: 0px; right: 0px;}
+    58.3% {bottom: 0px; left: 0px;}
+    66.6% {top: 0px; left: 0px;}
+    75% {top: 0px; right: 0px;}
+    83.3% {bottom: 0px; right: 0px;}
+    91.6% {bottom: 0px; left: 0px;}
+    99.9% {top: 0px; left: 0px;}
+    100% {display : none;}
+}
+
+@-webkit-keyframes aboleth {
+    0% {top: 0px; left: 0px;}
+    8.3% {top: 0px; right: 0px;}
+    16.6% {bottom: 0px; right: 0px;}
+    25% {bottom: 0px; left: 0px;}
+    33.3% {top: 0px; left: 0px;}
+    41.6% {top: 0px; right: 0px;}
+    50% {bottom: 0px; right: 0px;}
+    58.3% {bottom: 0px; left: 0px;}
+    66.6% {top: 0px; left: 0px;}
+    75% {top: 0px; right: 0px;}
+    83.3% {bottom: 0px; right: 0px;}
+    91.6% {bottom: 0px; left: 0px;}
+    99.9% {top: 0px; left: 0px;}
+    100% {display : none;}
+}
+@-moz-keyframes aboleth {
+    0% {top: 0px; left: 0px;}
+    8.3% {top: 0px; right: 0px;}
+    16.6% {bottom: 0px; right: 0px;}
+    25% {bottom: 0px; left: 0px;}
+    33.3% {top: 0px; left: 0px;}
+    41.6% {top: 0px; right: 0px;}
+    50% {bottom: 0px; right: 0px;}
+    58.3% {bottom: 0px; left: 0px;}
+    66.6% {top: 0px; left: 0px;}
+    75% {top: 0px; right: 0px;}
+    83.3% {bottom: 0px; right: 0px;}
+    91.6% {bottom: 0px; left: 0px;}
+    99.9% {top: 0px; left: 0px;}
+    100% {display : none;}
+}
+
+
+.keyframeanim {
+    animation-name : aboleth;
+    animation-duration: 10s;
+    -webkit-animation-name : aboleth;
+    -webkit-animation-duration: 10s;
+    -moz-animation-name: aboleth;
+    -moz-animation-duration: 10s;
+    width: 100px;
+    position: absolute;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    z-index: 2;
+    text-align: center;
+
+}

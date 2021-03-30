@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meredith's Bestiary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <form id='populate' onsubmit="populate()">
+                <img src="img/logo.png" alt="logo" class='logo'>
+                <div class='right'>
+                    <select name='layer' class='select' id='layer'>
+                        <option value="0">Select a layer</option>
+                        <option value="1">First Layer</option>
+                        <option value="2">Second Layer</option>
+                        <option value="3">Third Layer</option>
+                        <option value="4">Fourth Layer</option>
+                    </select>
+                    <select name='sublayer' class='select' id='region'>
+                        <option value="0.0">Select a region</option>
+                        <!-- populated using JavaScript -->
+                    </select>
+                    <select name='monster' class='select' id='monster'>
+                        <option value="0.0.0"> Select a monster</option>
+                        <!-- populated using JavaScript -->
+                    </select>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <img class='keyframeanim' src='/img/abolethdec.png' alt="">
+        <div class='informations'>
+            <img src="img/welcome.svg" alt="informations du monstre" class='finfo' id='informations'>
+            <button id='like' onclick="pop()">Inscrivez-vous à notre infolettre!</button>
+            <div class='popup' id='popup'>
+                <form action="">
+                    <h2>Inscrivez-vous à notre infolettre</h2>
+                    <label for="email">Adresse Courriel</label>
+                    <input type="text" name='email'>
+                    <input type='submit'>
+                    <button onclick="hideme()">Quitter</button>
+                </form>
+            </div>
+        </div>
+        <div class='stats'>
+            <img src="img/stats.png" alt="informations du monstre" class='fstats'>
+        </div>
+
+    </main>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
